@@ -1,0 +1,60 @@
+html {
+    background-image: url('https://play-lh.googleusercontent.com/GJO-iHaNMuP5z8IQs6CMrL2NPGJ2DyQ3BGSLY54jlhE7dQ5SQ-jgAAOiRZaVuc8wHg=w412-h220-rw');
+    background-color: hsl(0, 0%, 18%);
+    height: 100%;
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.tag h1{
+    color: azure;
+}
+
+#container {
+    height: 320px;
+    width: 350px;
+    background-color: #F5E4C3;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px;
+    grid-template-areas: 
+    ". retail-price"
+    ". sales-tax"
+    ". sold-price"
+    ". profit"
+    "btn btn";
+    margin: 0 auto;
+    border: 5px solid grey;
+    padding: 25px;
+}
+
+#retail_price {
+    grid-area: retail-price;
+}
+
+#sales_tax{
+    grid-area: sales-tax;
+}
+
+#profit {
+    grid-area: profit;
+}
+
+#sold_price {
+    grid-area: sold-price;
+}
+
+.input-styling{
+    height: 25px;
+    width: 250px;
+}
+#btn {
+    grid-area: btn;
+    height: 25px;
+    width: auto;
+}
